@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My website portfolio" />
+    <meta name="author" content="Lemuel" />
+
+    <meta property="og:title" content="Lemuel Inciso - Portfolio" />
+    <meta
+      property="og:description"
+      content="A website portfolio that highlights my programming and designing skills"
+    />
+    <meta property="og:image" content="images/thumbnail.png" />
+    <meta property="og:url" content="https://lemuel-inciso.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./images/logo.png" />
+
+    <!-- BOOTSTRAP ICON CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/transition-style" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lemuel Inciso</title>
+  </head>
+
+  <body class="dark">
+    <div class="theme">
+      <div class="socials">
+        <a href="https://www.instagram.com/phlemuelnx/" target="_blank"
+          ><i class="bi bi-instagram"></i
+        ></a>
+
+        <a href="https://t.me/smugggler" target="_blank">
+          <i class="bi bi-telegram"></i>
+        </a>
+
+        <a href="https://m.me/lemuel.inciso" target="_blank">
+          <i class="bi bi-messenger"></i>
+        </a>
+      </div>
+
+      <i class="bi bi-brightness-high" id="sun"></i>
+    </div>
+
+    <div class="homepage page">
+      <!-- <p>Hey there! — I'm</p> -->
+      <p>Hey there!<span id="hey"></span></p>
+      <div class="name">
+        <h1 id="myname"></h1>
+      </div>
+      <p>a front-end web developer</p>
+      <div class="textbg">
+        <p>
+          with a background in
+          <span id="second-line"><strong>graphic design</strong></span>
+        </p>
+      </div>
+      <p>&lt;/&gt;</p>
+      <div class="page-dots">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+      </div>
+    </div>
+
+    <div class="about page">
+      <img src="./images/myimage.webp" alt="" />
+      <div class="paragraph-transition" transition-style="in:wipe:down">
+        <p>
+          With over 5 years of experience as a graphic designer, I've mastered
+          the art of conveying powerful messages through minimalism. This
+          aesthetic, driven by the principle that less is more, has greatly
+          influenced my approach to both graphic design and web development.
+        </p>
+        <br />
+        <p>
+          I find a natural compatibility between graphic design and web
+          development, as they allow me to create seamless, clean, and intuitive
+          digital experiences. My journey has been guided by the belief that
+          simplicity enhances usability and engagement.
+        </p>
+      </div>
+
+      <div class="page-dots">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+      </div>
+    </div>
+
+    <div class="projects page">
+      <!-- <img src="./images/warning.png" alt="" />
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <h2>Under Construction</h2>
+      <p>Sorry for the inconvenience</p>
+      <img src="./images/warning.png" alt="" /> -->
+
+      <div class="project-container-wrapper">
+        <div class="project-container">
+          <img src="./images/project-one.JPG" alt="" />
+          <h4>Github Finder</h4>
+          <small
+            >Made using Vite + ReactJS, & Github API to fetch the data of any
+            user from the github website.</small
+          >
+          <!-- <div class="visit-btn">
+            <a href="https://lemuel-githubfinder.netlify.app/">Visit</a>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div> -->
+
+          <a
+            href="https://lemuel-githubfinder.netlify.app/"
+            class="visit-btn"
+            target="_blank"
+            >Visit
+            <span
+              ><i
+                id="visit-icon"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i></span
+          ></a>
+        </div>
+
+        <div class="project-container">
+          <img src="./images/adidas.JPG" alt="" />
+          <h4>Adidas Online</h4>
+          <small
+            >A clone website of Adidas PH [demonstration purposes only]</small
+          >
+          <!-- <div class="visit-btn">
+            <a href="https://lemuel-githubfinder.netlify.app/">Visit</a>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div> -->
+
+          <button class="unavailable-btn">
+            Unavailable
+            <span
+              ><i
+                id="visit-icon"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i
+            ></span>
+          </button>
+
+          <!-- <a href="/" class="visit-btn"
+            >Unavailable
+            <span
+              ><i
+                id="visit-icon"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i></span
+          ></a> -->
+        </div>
+
+        <div class="project-container">
+          <img src="./images/weather.png" alt="" />
+          <h4>Weather App</h4>
+          <small
+            >A simple app made using HTML, CSS, JS, and Weather API to fetch the
+            data and show the current weather of various cities in
+            real-time.</small
+          >
+          <!-- <div class="visit-btn">
+            <a href="https://lemuel-githubfinder.netlify.app/">Visit</a>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div> -->
+
+          <button class="unavailable-btn">
+            Unavailable
+            <span
+              ><i
+                id="visit-icon"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i
+            ></span>
+          </button>
+
+          <!-- <a
+            href="https://lemuel-githubfinder.netlify.app/"
+            class="visit-btn"
+            target="_blank"
+            >Visit
+            <span
+              ><i
+                id="visit-icon"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i></span
+          ></a> -->
+        </div>
+
+        <div class="project-container">
+          <img src="./images/currencyex.JPG" alt="" />
+          <h4>Currency Exchange</h4>
+          <small
+            >A simple app made using HTML, CSS, JS, and Exchange Rate API that
+            fetch data to convert different currencies in real-time exchange
+            rate.</small
+          >
+          <!-- <div class="visit-btn">
+            <a href="https://lemuel-githubfinder.netlify.app/">Visit</a>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div> -->
+
+          <button class="unavailable-btn">
+            Unavailable
+            <span
+              ><i
+                id="visit-icon"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i
+            ></span>
+          </button>
+
+          <!-- <a
+            href="https://lemuel-githubfinder.netlify.app/"
+            class="visit-btn"
+            target="_blank"
+            >Visit
+            <span
+              ><i
+                id="visit-icon"
+                class="fa-solid fa-arrow-up-right-from-square"
+              ></i></span
+          ></a> -->
+        </div>
+      </div>
+
+      <i id="scroll-icon" class="fa-solid fa-angles-down fa-bounce"></i>
+
+      <div class="page-dots">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+        <i class="bi bi-circle"></i>
+      </div>
+    </div>
+
+    <div class="techstack page">
+      <div class="techstack-transition" transition-style="in:wipe:down">
+        <div class="language-tools">
+          <p>Language & Frameworks :</p>
+          <div class="row-1">
+            <img src="./colored/html.svg" />
+            <img src="./colored/css.svg" />
+            <img src="./colored/javascript.svg" />
+            <img src="./colored/react.svg" />
+          </div>
+          <div class="row-2">
+            <img src="./colored/typescript.svg" />
+            <img src="./colored/sass.svg" id="sass" />
+            <img src="./colored/tailwind.svg" id="tailwind" />
+            <img src="./colored/bootstrap.svg" />
+          </div>
+        </div>
+        <div class="dev-tools">
+          <p>Developer's Tools :</p>
+          <div class="row-3">
+            <img src="./colored/vscode.svg" />
+            <img src="./colored/github.svg" />
+            <img src="./colored/bash.webp" />
+            <img src="./colored/terminal.svg" />
+          </div>
+        </div>
+        <div class="design-tools">
+          <p>Editing / Designing Tools :</p>
+          <div class="row-4">
+            <img src="./colored/ps.svg" />
+            <img src="./colored/ai.svg" />
+            <img src="./colored/xd.svg" />
+            <img src="./colored/figma.svg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="page-dots">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle"></i>
+      </div>
+    </div>
+
+    <div class="contact page">
+      <form
+        class="contact-container"
+        action="https://formsubmit.co/898a7e067699bf26e51ed73ab97f87a6"
+        method="POST"
+        transition-style="in:wipe:down"
+      >
+        <h4>Let's Talk! <i class="bi bi-emoji-smile"></i></h4>
+
+        <input
+          type="email"
+          name="email"
+          id="input-email"
+          placeholder="Your email address"
+          autocomplete="off"
+        />
+
+        <textarea name="message" id="message" placeholder="Message"></textarea>
+        <button type="submit" id="submit-btn">
+          Send Message <i class="bi bi-send-fill"></i>
+        </button>
+      </form>
+
+      <div class="page-dots">
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+        <i class="bi bi-circle-fill"></i>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="prev">
+        <button id="prevButton">
+          <i class="fa-solid fa-circle-chevron-left"></i>
+        </button>
+        <p>Back</p>
+      </div>
+
+      <p id="page-title"></p>
+
+      <div class="next">
+        <button id="nextButton">
+          <i class="fa-solid fa-circle-chevron-right"></i>
+        </button>
+        <p>Next</p>
+      </div>
+    </div>
+
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
