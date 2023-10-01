@@ -814,3 +814,38 @@
   [transition-style="in:wipe:down"] {
     animation: 0.5s cubic-bezier(.25, .25, .25, .25) wipe-in-down both;
   }
+
+/* Style for the content-box container */
+.experience .content-box {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Style for the CV download button */
+.experience .cv-button {
+  display: inline-block;
+  background-color: #007bff; /* Customize the button color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+/* Style for the .container elements within the content-box */
+.experience .container {
+  padding: 1rem 0;
+}
+
+.experience h2 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.experience p {
+  font-size: 14px;
+  line-height: 20px;
+}
