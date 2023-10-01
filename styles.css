@@ -814,38 +814,111 @@
   [transition-style="in:wipe:down"] {
     animation: 0.5s cubic-bezier(.25, .25, .25, .25) wipe-in-down both;
   }
-
-/* Style for the content-box container */
-.experience .content-box {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Style for the CV download button */
-.experience .cv-button {
-  display: inline-block;
-  background-color: #007bff; /* Customize the button color */
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-bottom: 1rem;
-}
-
-/* Style for the .container elements within the content-box */
-.experience .container {
-  padding: 1rem 0;
-}
-
-.experience h2 {
-  font-size: 24px;
-  margin-bottom: 0.5rem;
-}
-
-.experience p {
-  font-size: 14px;
-  line-height: 20px;
-}
+  .experience {
+    border: 2px solid white;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 2.5rem;
+    position: relative;
+  }
+  
+  .experience .content-box {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .experience .cv-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  .experience .container {
+    padding: 1rem 0;
+  }
+  
+  .experience h2 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .light .experience,
+  .light .experience .content-box {
+    border-color: #333333;
+    color: #333333;
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 370px) {
+    .experience {
+      padding-top: 2rem;
+    }
+  
+    .experience p {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 480px) {
+    .experience {
+      width: 85%;
+    }
+  
+    .experience p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .experience {
+      width: 75%;
+      padding-top: 3.5rem;
+    }
+  
+    .experience p {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 990px) {
+    .experience {
+      height: 600px;
+      width: 55%;
+      padding-top: 4.5rem;
+    }
+  
+    .experience .cv-button {
+      padding: 12px 24px;
+    }
+  
+    .experience p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .experience p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: justify;
+      width: 65%;
+    }
+  }
+  
