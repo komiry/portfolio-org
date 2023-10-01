@@ -67,4 +67,3 @@ function showNextPage() {
     showPage(currentPage);
   }
 }
-
